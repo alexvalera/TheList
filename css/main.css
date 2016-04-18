@@ -1,3 +1,20 @@
+.user-container {
+  width: 100%; }
 
+.user-box {
+  margin: 0 auto;
+  width: 400px;
+  border: 1px solid #aaaaaa;
+  height: 100px;
+  transition: all 0.5s ease; }
+  .user-box:hover {
+    opacity: 0.8; }
+
+.user-img {
+  width: 100px; }
+
+.user-title {
+  font-size: 24px;
+  margin-left: 20px; }
 
 /*# sourceMappingURL=main.css.map */
