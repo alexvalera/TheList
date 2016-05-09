@@ -60,19 +60,19 @@ app.controller("ChatCtrl", ["$scope", "chatMessages",
     };
 
     // if the messages are empty, add something for fun!
-    $scope.messages.$loaded(function() {
-      if ($scope.messages.length === 0) {
-        $scope.messages.$add({
-          from: "Uri",
-          content: "Hello!",
-          timestamp: Firebase.ServerValue.TIMESTAMP
-        });
-      }
-    });
+//    $scope.messages.$loaded(function() {
+//      if ($scope.messages.length === 0) {
+//        $scope.messages.$add({
+//          from: "Uri",
+//          content: "Hello!",
+//          timestamp: Firebase.ServerValue.TIMESTAMP
+//        });
+//      }
+//    });
   }
 ]);
 
-function selectUserToggle()
+function selectUserToggle(id)
 {
     
 }
