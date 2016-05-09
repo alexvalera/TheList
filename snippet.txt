@@ -1,0 +1,19 @@
+<!--
+            <div class = "row">
+                <div class = "user-container" ng-controller = "AuthCtrl">
+                    <div class = "user-box">
+                    <img src = "images/gabbi.jpg" class = "user-img">
+                        <span class = "user-title">
+                        Gabbi
+                        </span>
+                    </div>
+                    <br>
+                    <div class = "user-box">
+                        <img src = "images/alex.png" class = "user-img">
+                        <span class = "user-title">
+                            Alex
+                        </span>
+                    </div>
+                </div>
+            </div>
+-->
