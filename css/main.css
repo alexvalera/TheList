@@ -29,7 +29,8 @@
 
 .list {
   width: 100%;
-  list-style-type: none; }
+  list-style-type: none;
+  margin-bottom: 300px; }
 
 .list-item {
   font-size: 20px;
