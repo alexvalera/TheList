@@ -14,6 +14,7 @@
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%); }
   .user-img:hover {
+    cursor: pointer;
     border: 2px solid #81CFE0;
     -webkit-filter: grayscale(0%);
     /* Chrome, Safari, Opera */
@@ -85,5 +86,13 @@
 .actions-panel {
   float: left;
   width: 20%; }
+
+#bottom-panel {
+  box-shadow: 10px 5px 5px black; }
+
+.fullcolor-icon {
+  -webkit-filter: grayscale(0%);
+  /* Chrome, Safari, Opera */
+  filter: grayscale(0%); }
 
 /*# sourceMappingURL=main.css.map */

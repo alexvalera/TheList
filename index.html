@@ -30,7 +30,7 @@
                     <div class="chatbox list">
                     <!-- arrays are fully sortable and filterable -->
                     <div style = "width: 100%;" class = "list-item" ng-repeat="message in messages | orderBy:orderBy | filter:searchText">
-                    <div class = "message-panel">{{ message.from }}: {{ message.content }}</div>
+                    <div class = "message-panel"><span ng-show = "message.from == 'Gabbi'"><img src = "images/gabbi.jpg" class = "fullcolor-icon user-img"></span><span ng-show = "message.from =='Alex'"><img src = "images/alex.png" class = "fullcolor-icon user-img"></span> {{ message.content }}</div>
                         
 
                     <!-- delete a message using $remove -->
@@ -47,7 +47,7 @@
         </div>
     </div>
     
-    <div align = "center" style = "position: fixed; bottom: 0; height: 100px; width: 100%; background-color: #dedede; padding-top: 20px; padding-bottom: 20px;">
+    <div align = "center" style = "position: fixed; bottom: 0; height: 100px; width: 100%; background-color: #dedede; padding-top: 20px; padding-bottom: 20px;" id = "bottom-panel">
   <form style = "width: 100%;" ng-submit="addMessage()">
         <span class = "underline-user">
             <img src = "images/gabbi.jpg" class = "user-img" id = "gabbi-icon" ng-click = "selectUser('G')">

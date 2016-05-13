@@ -25,24 +25,25 @@ app.controller("ChatCtrl", ["$scope", "chatMessages",
         
         if (u == 'G')
         {
-            alert("Gabbi chosen");
+//            alert("Gabbi chosen");
             $scope.isGabbi= true; 
             $scope.isAlex = false; 
-            alert($scope.isGabbi);
+//            alert($scope.isGabbi);
             $scope.user = "Gabbi";
+            selectUserToggle('gabbi-icon');
         }
         
         else if (u == 'A')
         {
-            alert ("Alex chosen"); 
+//            alert ("Alex chosen"); 
             $scope.isAlex = true; 
             $scope.isGabbi = false; 
-            
-            alert($scope.isAlex);
+//            alert($scope.isAlex);
             $scope.user = "Alex";
+            selectUserToggle('alex-icon');
         }
         
-        alert($scope.user);
+//        alert($scope.user);
         
     }
 
@@ -53,7 +54,7 @@ app.controller("ChatCtrl", ["$scope", "chatMessages",
       $scope.messages.$add({
         from: $scope.user,
         content: $scope.message,
-        timestamp: Firebase.ServerValue.TIMESTAMP
+        timestamp: Firebase.ServerValue.TIMESTAMP, 
       });
 
       $scope.message = "";
@@ -74,5 +75,18 @@ app.controller("ChatCtrl", ["$scope", "chatMessages",
 
 function selectUserToggle(id)
 {
+    var elem = document.getElementById(id); 
+    
+    if (id == 'gabbi-icon')
+    {
+        elem.classList.add('fullcolor-icon');
+        document.getElementById('alex-icon').classList.remove('fullcolor-icon');
+    }
+    
+    else 
+    {
+        elem.classList.add('fullcolor-icon');
+        document.getElementById('gabbi-icon').classList.remove('fullcolor-icon');
+    }
     
 }
