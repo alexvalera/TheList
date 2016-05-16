@@ -20,7 +20,7 @@
     </select>
   </p>
 -->
-    <div class = "container-fluid">
+    <div class = "container">
         <div class = "row">
             <div class = "col-md-12">
                 <div  class = "list-container">
@@ -30,16 +30,37 @@
                     <div class="chatbox list">
                     <!-- arrays are fully sortable and filterable -->
                     <div style = "width: 100%;" class = "list-item" ng-repeat="message in messages | orderBy:orderBy | filter:searchText">
-                    <div class = "message-panel"><span ng-show = "message.from == 'Gabbi'"><img src = "images/gabbi.jpg" class = "fullcolor-icon user-img"></span><span ng-show = "message.from =='Alex'"><img src = "images/alex.png" class = "fullcolor-icon user-img"></span> {{ message.content }}</div>
+               
+                    <div class = "message-panel">
+                        <span ng-show = "message.from == 'Gabbi'">
+                            <img src = "images/gabbi.jpg" class = "fullcolor-icon user-img">
+                        </span>
+                        <span ng-show = "message.from =='Alex'">
+                            <img src = "images/alex.png" class = "fullcolor-icon user-img">
+                        </span> 
+                        <span class = "message-content-container">
+                            {{ message.content }}
+                        </span>
+                        
+  
+                    </div> 
+                    <div class = "actions-panel">
+                        <span >
+                            <a href="" ng-click="messages.$remove(message)" class = "btn x-out complete-btn">complete</a>
+                            <a href="" ng-click="messages.$remove(message)" class = "btn x-out remove-btn">remove</a>
+                        </span>
+                    </div> 
+                        
+                  
+                    
                         
 
                     <!-- delete a message using $remove -->
-                    <div class = "actions-panel">
-                    <span align = "right">
-                    <a href="" ng-click="messages.$remove(message)" class = "btn x-out complete-btn">complete</a>
-                    <a href="" ng-click="messages.$remove(message)" class = "btn x-out remove-btn">remove</a>
-                    </span>
-                    </div>
+  
+                    
+                        
+                        
+                        
                     </div>
                     </div>
                 </div>

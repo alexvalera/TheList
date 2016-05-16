@@ -47,19 +47,22 @@
 }
 
 .list-item {
+    background-color: white;
+    border: 1px solid #cecece;
     font-size: 20px;
-    width: 100%;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    padding-top: 20px;
+    height: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-right: 20px;
+   
 }
 
 #list-title {
     font-size: 20px;
     padding: 10px;
-    border: 1px solid #4183D7;
+    border: 1px solid white;
     margin-bottom: 50px;
-    color: #4183D7;
+    color: white;
 }
 
 .x-out {
@@ -108,14 +111,20 @@
 }
 
 .message-panel {
-    padding-left: 15px;
+   
+   
+    padding:15px 25px 5px 25px;
     float: left;
     width: 80%;
 }
 
 .actions-panel {
+
+   margin-top: 25px;
     float: left;
     width: 20%;
+   
+    
 }
 
 #bottom-panel {
@@ -126,4 +135,25 @@
 {
     -webkit-filter: grayscale(0%); /* Chrome, Safari, Opera */
     filter: grayscale(0%);
+}
+
+.chatbox {
+    
+}
+
+.list-item-container {
+    
+}
+
+body {
+
+
+background-color: #86E2D5;
+        
+        
+        
+}
+
+.message-content-container {
+   padding-left: 10px;
 }

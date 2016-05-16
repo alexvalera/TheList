@@ -54,7 +54,8 @@ app.controller("ChatCtrl", ["$scope", "chatMessages",
       $scope.messages.$add({
         from: $scope.user,
         content: $scope.message,
-        timestamp: Firebase.ServerValue.TIMESTAMP, 
+        timestamp: Firebase.ServerValue.TIMESTAMP,
+        completed: false
       });
 
       $scope.message = "";
